@@ -34,3 +34,25 @@ and the chrome console is the place to live and it can be much friendlier with t
 
 here's another resource for "JavaScript for Ruby Programmers" - http://www.martinrinehart.com/models/tutorial/tutorial_19.html
 tutorial for Google SketchUp including SketchUp rubies
+
+Ben's lecture Tuesday pm:
+
+var variableName defines a variable. If we don't use var, then JS will look up through the function tree until it finds an existing variable with that name, and create a global variable if none exists. That makes it wise to always use var when declaring variables.
+
+function creates scope, and that's the only thing that defines scope. Except maybe for loops?!
+
+Constructor pattern: 
+```function Dog() {
+  this.name = 'Barney';
+  this.bark = function() {
+    return 'Bark!';
+  }
+}
+```
+
+```dog = new Dog
+dog.bark()
+=> "Bark!"
+dog.name
+=> "Barney"
+```
