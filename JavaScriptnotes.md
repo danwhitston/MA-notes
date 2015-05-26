@@ -52,7 +52,8 @@ function Dog() {
 }
 ```
 
-```dog = new Dog
+```
+dog = new Dog
 dog.bark()
 => "Bark!"
 dog.name
