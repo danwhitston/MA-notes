@@ -59,3 +59,8 @@ dog.bark()
 dog.name
 => "Barney"
 ```
+
+Relatedly: always use new when calling a constructor function, and never use new with a non-constructor function, and always use new with a capital letter function, and never use new with a non-capital letter function.
+
+this can be unexpected, so use console.log(this) to check.
+
