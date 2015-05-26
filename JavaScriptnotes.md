@@ -41,7 +41,8 @@ var variableName defines a variable. If we don't use var, then JS will look up t
 
 function creates scope, and that's the only thing that defines scope. Except maybe for loops?!
 
-Constructor pattern: 
+Constructor pattern:
+
 ```function Dog() {
   this.name = 'Barney';
   this.bark = function() {
