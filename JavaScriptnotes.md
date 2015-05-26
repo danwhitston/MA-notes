@@ -31,3 +31,6 @@ The JavaScript Guide shows you how to use JavaScript and gives an overview of th
 
 Sam Joseph [2:13 PM]
 and the chrome console is the place to live and it can be much friendlier with these tips and tricks: https://developer.chrome.com/devtools/docs/tips-and-tricks
+
+here's another resource for "JavaScript for Ruby Programmers" - http://www.martinrinehart.com/models/tutorial/tutorial_19.html
+tutorial for Google SketchUp including SketchUp rubies
