@@ -43,7 +43,8 @@ function creates scope, and that's the only thing that defines scope. Except may
 
 Constructor pattern:
 
-```function Dog() {
+```
+function Dog() {
   this.name = 'Barney';
   this.bark = function() {
     return 'Bark!';
