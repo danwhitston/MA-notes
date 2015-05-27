@@ -64,3 +64,44 @@ Relatedly: always use new when calling a constructor function, and never use new
 
 this can be unexpected, so use console.log(this) to check.
 
+Ben's lecture Wednesday am
+
+### Setting up Jasmine
+
+Using standalone version for easy unit testing of JS components
+
+Set up lib, spec, src and specrunner.html acting as test console
+
+lib holds Jasmine code this time round!
+spec holds example tests
+src holds example code
+
+Create initial test using Jasmine, e.g.
+
+```
+describe('Airport', function (){
+  it('can land planes', function(){
+    var airport = new Airport();
+    var plane = {};
+    airport.land(plane);
+    expect(airport.planes).toContain(plane);
+  })
+})
+
+Note plane = {} is making a dummy object
+
+Can declare functions in multiple ways
+
+function Airport(){}; # declares function as a function
+
+var Airport = function(){} # declare function as a var. This doesn't come into scope until it's been read and produces difficult to trace errors as the function is anonymous
+
+function Airport(){
+  this.planes = [];
+  
+  this.land = function(plane){
+    this.planes.push(plane);
+  };
+};
+
+    
