@@ -87,6 +87,7 @@ describe('Airport', function (){
     expect(airport.planes).toContain(plane);
   })
 })
+```
 
 Note plane = {} is making a dummy object
 
@@ -96,6 +97,7 @@ function Airport(){}; # declares function as a function
 
 var Airport = function(){} # declare function as a var. This doesn't come into scope until it's been read and produces difficult to trace errors as the function is anonymous
 
+```
 function Airport(){
   this.planes = [];
   
@@ -103,5 +105,7 @@ function Airport(){
     this.planes.push(plane);
   };
 };
+```
 
-    
+Functions created as part of an object are recreated for each instance. Use prototype definition to keep it in one place.
+
