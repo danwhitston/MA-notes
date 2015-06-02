@@ -1,3 +1,5 @@
+SJ Mog put together a github repo and recorded a video on 2/6/15 with CSS info.
+
 CSS is a separate file that acts as a list of styles to be applied to different bits of the DOM.
 
 ```
@@ -10,6 +12,7 @@ selector {
 selector {
   attribute: value two;
 }
+```
 
 ** Selectors and how to target them
 
