@@ -22,8 +22,30 @@ selector {
 * Sibling ( .element + .sibling )
 
 Ideally, style classes not elements, i.e. don't style h1 as that's styling semantics.
+
 Ideally, don't style id and use them for JS interactivity instead.
+
 Can use attribute to e.g. find all .co.uk links and style them.
 
+*** The Box Model
 
+display: block puts blocks underneath each other
 
+display: inline shrinks blocks to size of content and puts them beside each other
+
+margin: changes the distance between the block and other content
+
+margin: auto tries to centre the block between other objects
+
+margin: 0 auto will try to centre horizontally and go to the edge vertically
+
+display: inline-block puts them side-by-side
+everything is defined using rectangular boxes
+
+Within a defined div, all styling only affects the inside, so e.g. border: 2px goes inwards not outwards.
+
+can use text-align: center to centre objects in a display: inline-block div
+
+position: absolute is mostly useful for stopping something from affecting rest of page flow and positioning
+
+position: fixed doesn't move when the rest of the page scrolls
